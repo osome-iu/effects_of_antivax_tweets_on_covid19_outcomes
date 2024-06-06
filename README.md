@@ -5,7 +5,7 @@ Authors: John Bollenbacher, Fil Menczer, John Bryden
 
 
 
-**Included code: **
+**Included code:**
 
 01tweet_json_to_parquet.ipynb
 
@@ -46,6 +46,7 @@ This script contains code to produce final plots which were then prepared into o
 
 
 **Included data:**
+
 antivax_labels_rebalanced.parquet
 
 This file contains our antivax tweet classifier training data which we labeled internally.
