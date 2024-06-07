@@ -54,4 +54,4 @@ This file contains the test set data for evaluating the classifier. This data is
 
 * **Marissa Donofrio**, for help labeling tweet data with our team.
 
-* **Bjarke Mønsted**, for making their labeled antivaccine tweet data publicly available on GitHub in early 2021. 
+* **Bjarke Mønsted**, for making their labeled antivaccine tweet data available to our team in early 2021. 
