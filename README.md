@@ -43,7 +43,7 @@ This script contains code to produce final plots which were then prepared into o
 This file contains our antivax tweet classifier training data which we labeled internally.
 
 * **monsted_mturk_vaxx_labels.tsv**.
-This file contains our antivax tweet classifier training data, which Monsted et al. labeled using Mechanical Turk. This data was developed for their paper titled "Algorithmic detection and analysis of vaccine-denialist sentiment clusters in social networks" (Tech. Rep. [doi:10.48550/arXiv.1905.12908](https://doi.org/10.48550/arXiv.1905.12908))
+This file contains antivax tweet classifier training data, which Monsted et al. labeled using Mechanical Turk. This data was developed for their paper titled "Algorithmic detection and analysis of vaccine-denialist sentiment clusters in social networks" (Tech. Rep. [doi:10.48550/arXiv.1905.12908](https://doi.org/10.48550/arXiv.1905.12908)) and is available from the authors upon reasonable request.
 
 * **test_set.parquet**.
 This file contains the test set data for evaluating the classifier. This data is a random sample of our full geolocated tweets dataset, and was labeled manually by our team.
