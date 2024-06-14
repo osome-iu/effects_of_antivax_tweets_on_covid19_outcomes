@@ -1,8 +1,6 @@
 # Effects of Antivaccine Tweets on COVID-19 Vaccinations, Cases, and Deaths
 
-Code and labeled tweets data for the paper "Effects of Antivaccine Tweets on COVID-19 Vaccinations, Cases, and Deaths"
-
-Authors: John Bollenbacher, Fil Menczer, John Bryden
+Code and labeled tweets data for the paper "Effects of Antivaccine Tweets on COVID-19 Vaccinations, Cases, and Deaths" by John Bollenbacher, Fil Menczer, John Bryden. Tech Rep. [10.48550/arXiv.2406.09142](https://doi.org/10.48550/arXiv.2406.09142)
 
 
 
