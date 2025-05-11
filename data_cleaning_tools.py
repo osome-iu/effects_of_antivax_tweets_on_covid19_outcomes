@@ -171,18 +171,28 @@ def get_neighbor_mean(df, cols, neighbor_type = 'geo', pop_weighting=False, norm
         df = df.merge(means_df, on=['FIPS','date'], how='left')   
     return df
 
-def get_exposure(df, cols, neighbor_type): 
-    df=df.copy()
-    df1 = df[['FIPS','date','population']+cols].copy()
-    for col in cols:
-        df1[col+'xpop'] = df[col]*df['population']
-        df1 = get_neighbor_mean(df1,[col+'xpop'], 
-                                neighbor_type=neighbor_type, 
-                                pop_weighting=(True if neighbor_type=='geo' else False),
-                                normalize_edgelist=True)
-        df[col+'_exposure'] = df1.eval(col+'xpop_'+neighbor_type+'_neighbor_mean/population')
-    return df
+# def get_exposure(df, cols, neighbor_type):  #pop weighted
+#     df=df.copy()
+#     df1 = df[['FIPS','date','population']+cols].copy()
+#     for col in cols:
+#         df1[col+'xpop'] = df[col]*df['population']
+#         df1 = get_neighbor_mean(df1,[col+'xpop'], 
+#                                 neighbor_type=neighbor_type, 
+#                                 pop_weighting=(True if neighbor_type=='geo' else False),
+#                                 normalize_edgelist=True)
+#         df[col+'_exposure'] = df1.eval(col+'xpop_'+neighbor_type+'_neighbor_mean/population')
+#     return df
 
+# def get_exposure(df, cols, neighbor_type='retweet'): #unweighted
+#     df=df.copy()
+#     df1 = df[['FIPS','date','population']+cols].copy()
+#     for col in cols:
+#         df1 = get_neighbor_mean(df1,[col], 
+#                                 neighbor_type=neighbor_type, 
+#                                 pop_weighting=(True if neighbor_type=='geo' else False),
+#                                 normalize_edgelist=True)
+#         df[col+'_exposure'] = df1.eval(col+'_'+neighbor_type+'_neighbor_mean/population')
+#     return df
 
 
 # clustering stuff
